@@ -1,0 +1,118 @@
+.contacts {
+  padding-bottom: 100px;
+  padding-top: 150px;
+  
+  @media screen and (min-width: 1200px) {
+    padding-top: 180px;
+  }
+}
+
+.contacts-container {
+  @media screen and (min-width: 1200px) {
+    width: 533px;
+  }
+}
+
+.contacts__img {
+  margin: 0 auto;
+  margin-bottom: 60px;
+  width: 200px;
+    height: 50px;
+
+  @media screen and (min-width: 1200px) {
+    width: 233px;
+    height: 60px;
+  }
+}
+
+.contacts__list--item {
+  display: block;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 27px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 18px;
+  }
+}
+
+.contacts__list--text {
+  font-weight: 600;
+  width: 199px;
+  
+  @media screen and (min-width: 1200px) {
+    text-align: right;
+  }
+}
+
+.contacts__list--data {
+  font-weight: 400;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
+.contacts__socialLinksListContainer {
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.contacts__socialLinksList {
+  padding-left: 45px;
+  padding-right: 45px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.contacts__socialLinksListDesktop {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+  }
+}
+
+.contacts__socialLinksList--link {
+  width: 60px;
+  height: 60px;
+  background: #2c2c2c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  fill: currentColor;
+  transition-property: background-color, fill;
+  transition-duration: 800ms;
+
+  &:hover,
+  &:focus {
+    background: #7a66cc;
+    fill: #2c2c2c;
+  }
+}
+
+.contacts__socialLinksList--span {
+  width: 44px;
+  height: 44px;
+  background: #7a66cc;
+  border-radius: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 800ms;
+
+  &:hover,
+  &:focus {
+    background: #fff;
+  }
+}

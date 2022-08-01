@@ -1,0 +1,159 @@
+.about {
+  padding-top: 150px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 180px;
+    }
+}
+
+.about__titleContainer {
+  display: flex;
+  align-items: center;
+}
+
+.about__titleContainer--svg{
+  height: 50px;
+  width: 70px;
+}
+
+.about__icon {
+  width: 64px;
+  height: 31px;
+}
+
+.about__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 72px;
+  margin-left: 10px;
+  
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    margin-left: 30px;
+  }
+}
+
+.about__description {
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+
+.about__descriptionText {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  margin-right: 0;
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 125px;
+  }
+}
+
+.about__img {
+  width: 320px;
+  height: 300px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    width: 445px;
+    height: 466px;
+    margin-bottom: 0;
+  }
+}
+
+.about__list {
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    display: flex;
+    width: 540px;
+    margin-bottom: -32px;
+  }
+}
+
+.about__list--item {
+  display: flex;
+  margin-bottom: 32px;
+  width: 245px;
+
+  &:nth-child(odd) {
+    margin-right: 40px;
+  }
+}
+
+.about__list--svg {
+  margin-right: 20px;
+}
+
+.about-descipt-icon {
+  margin-right: 20px;
+}
+
+.about__descriptionOfMusic {
+  position: relative;
+  margin-top: 80px;
+  border: 1px solid #ffffff;
+  border-radius: 30px 0px;
+  padding: 50px 20px;
+  
+  @media screen and (min-width: 1200px) {
+    padding: 50px 0 50px 80px;
+    margin-top: 280px;
+  }
+
+  &::before {
+    @media screen and (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/about/aboutMusic-img.png");
+    width: 370px;
+    height: 480px;
+    top: -50%;
+    left: 60%;
+    }
+  }
+}
+
+.about__descriptionOfMusic--text {
+  position: relative;
+
+  @media screen and (min-width: 1200px) {
+  width: 520px;
+  height: 136px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0px;
+    opacity: 0.6;
+    border: 1px solid #ffffff;
+    width: 240px;
+    
+    @media screen and (min-width: 1200px) {
+      width: 520px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.about__descriptionOfMusic--link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #7a66cc;
+  margin-top: 15px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    }
+}

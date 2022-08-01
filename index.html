@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dj portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <img src="./img/logo.png" alt="logo" height="60" width="233" />
+        <nav class="neader__nav">
+          <ul class="header__list list">
+            <li class="header__list--link">
+              <a href="#about" class="header__list--link link">About</a>
+            </li>
+            <li class="header__list--link">
+              <a href="#news" class="header__list--link link">News</a>
+            </li>
+            <li class="header__list--link">
+              <a href="#music" class="header__list--link link">Music</a>
+            </li>
+            <li class="header__list--link">
+              <a href="#media" class="header__list--link link">Media</a>
+            </li>
+            <li class="header__list--link">
+              <a href="#tours" class="header__list--link link">Tours</a>
+            </li>
+            <li class="header__list--link">
+              <a href="#contacts" class="header__list--link link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="news">
+        <div class="container about-container">
+          <h1 class="news__firstTitle">New Single</h1>
+          <p class="news__secondTitle">War For Love</p>
+          <audio src="audio/WarForLove.mp3" class="main-audio" controls></audio>
+          <ul class="news__list list" id="news">
+            <li class="news__list--item">
+              <img
+                src="./img/news/news1.png"
+                alt="news1"
+                class="news__list--img"
+              />
+              <p class="news__list--description">
+                Working on my upcoming full-lenth album that`s releasing later
+                this year.
+              </p>
+            </li>
+            <li class="news__list--item">
+              <img
+                src="./img/news/news2.png"
+                alt="news2"
+                class="news__list--img"
+              />
+              <p class="news__list--description">
+                Halloween vibes. <br />Listen my new track!
+              </p>
+            </li>
+            <li class="news__list--item">
+              <img
+                src="./img/news/news3.png"
+                alt="news3"
+                class="news__list--img"
+              />
+              <p class="news__list--description">
+                WarForLove is OUT NOW!! <br />Stream it here!
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__titleContainer">
+            <svg height="31" width="64" class="about__titleContainer--svg">
+              <use href="svg/sprite.svg#about-icon"></use>
+            </svg>
+            <h2 class="about__title">Bright Lights</h2>
+          </div>
+          <div class="about__description">
+            <p class="about__descriptionText">
+              Bright Lights is a multi-Grammy nominated singer, songwriter, DJ
+              and record producer. She has written for numerous pop stars
+              including Britney Spears, Justin Bieber, Usher and Beyoncé. Her
+              catalog has amassed over 1 billion streams worldwide. More than
+              100 million of those streams can be attributed to her artist
+              career and include such hits as Porter Robinson's "Language,"
+              3LAU's "How You Love Me" and her own single "Runaway." She was
+              also a featured vocalist on Zedd's #1 Clarity album. Her latest
+              music video, "Put It Down," reached 1 million streams in the first
+              week, releasing independently. Bright Lights is currently in the
+              studio working on a self-produced album slated for release in
+              2020.
+            </p>
+            <img
+              src="img/about/about-img.png"
+              alt="about-img"
+              class="about__img"
+            />
+          </div>
+          <ul class="about__list list">
+            <li class="about__list--item">
+              <svg height="30" width="30" class="about__list--svg">
+                <use href="svg/sprite.svg#icon-about-rectangle"></use>
+              </svg>
+              Based in: Los Angeles
+            </li>
+            <li class="about__list--item">
+              <svg height="30" width="30" class="about__list--svg">
+                <use href="svg/sprite.svg#icon-about-rectangle"></use>
+              </svg>
+              Founded in 2011
+            </li>
+            <li class="about__list--item">
+              <svg height="30" width="30" class="about__list--svg">
+                <use href="svg/sprite.svg#icon-about-rectangle"></use>
+              </svg>
+              Genre: #DancePop
+            </li>
+            <li class="about__list--item">
+              <svg height="30" width="30" class="about__list--svg">
+                <use href="svg/sprite.svg#icon-about-rectangle"></use>
+              </svg>
+              Label: 333 Recordings
+            </li>
+          </ul>
+          <div class="about__descriptionOfMusic">
+            <p class="about__descriptionOfMusic--text">
+              “In an age where mainstream music is designed to be as easily
+              consumed as possible, listening to Bright Lights is refreshing, to
+              say the least. Her sound is perfect for radio but complex enough
+              to separate her from other pop newcomers.”
+            </p>
+            <p class="about__descriptionOfMusic--link">PopULove.net</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="music" id="music">
+        <div class="container music-container">
+          <div class="music__titleContainerMobile">
+            <svg height="31" width="64" class="music__titleContainer--svg">
+              <use href="svg/sprite.svg#about-icon"></use>
+            </svg>
+            <h2 class="music__title">Last tracks</h2>
+          </div>
+          <div class="music__img--firstContainer">
+            <div class="music__img--secondContainer">
+              <img
+                src="img/music/music-img.png"
+                alt="music-img"
+                class="music__img"
+              />
+            </div>
+          </div>
+          <div class="music__listContainer">
+            <div class="music__titleContainer">
+              <svg height="31" width="64">
+                <use href="svg/sprite.svg#about-icon"></use>
+              </svg>
+              <h2 class="music__title">Last tracks</h2>
+            </div>
+            <audio
+              src="audio/HowYouLoveMe.mp3"
+              class="music__audio"
+              id="HowYouLoveMeAudio"
+              controls
+            ></audio>
+            <audio
+              src="audio/WarForLove.mp3"
+              class="music__audio audio-hidden"
+              id="WarForLoveAudio"
+              controls
+            ></audio>
+            <audio
+              src="audio/Ghost.mp3"
+              class="music__audio audio-hidden"
+              id="GhostAudio"
+              controls
+            ></audio>
+            <audio
+              src="audio/NeverSayGoodbye.mp3"
+              class="music__audio audio-hidden"
+              id="NeverSayGoodbyeAudio"
+              controls
+            ></audio>
+            <audio
+              src="audio/WhereAreYouNow.mp3"
+              class="music__audio audio-hidden"
+              id="WhereAreYouNowAudio"
+              controls
+            ></audio>
+            <audio
+              src="audio/FollowYouDown.mp3"
+              class="music__audio audio-hidden"
+              id="FollowYouDownAudio"
+              controls
+            ></audio>
+            <ol class="music__list">
+              <li class="music__list--item current-audio" id="HowYouLoveMe">
+                3LAU, Bright Lights — How You Love Me
+              </li>
+              <li class="music__list--item" id="WarForLove">
+                Bright Lights, Kaleena Zanders, Kandy — War For Love
+              </li>
+              <li class="music__list--item" id="Ghost">
+                Pink Is Punk, Benny Benassi, Bright Lights — Ghost
+              </li>
+              <li class="music__list--item" id="NeverSayGoodbye">
+                Hardwell, Dyro, Bright Lights — Never Say Goodbye
+              </li>
+              <li class="music__list--item" id="WhereAreYouNow">
+                Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now
+              </li>
+              <li class="music__list--item" id="FollowYouDown">
+                Zedd, Bright Lights — Follow You Down
+              </li>
+            </ol>
+            <div class="music__linkContainer">
+              <p class="music__linkContainer--title">Follow me:</p>
+              <ul class="music__linkList list">
+                <li class="music__linkList--item">
+                  <a
+                    href="https://open.spotify.com/artist/2AoeqcUs8DySgZRJ9yV4Ou?si=Slkpm_zGR1aXGp0xpQE5nQ"
+                    target="_blank"
+                    class="music__linkList--link link"
+                  >
+                    <svg class="music__linkList--img" height="21" width="21">
+                      <use href="svg/sprite.svg#spotify-icon"></use>
+                    </svg>
+                    Spotify</a
+                  >
+                </li>
+                <li class="music__linkList--item">
+                  <a href="" class="music__linkList--link link">
+                    <svg class="music__linkList--img" height="21" width="21">
+                      <use href="svg/sprite.svg#itunes-icon"></use>
+                    </svg>
+                    iTunes</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="media" id="media">
+        <div class="container media-container">
+          <img src="img/media/media1.png" alt="img1" class="media__img" />
+          <div style="display: block">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 30px;
+              "
+            >
+              <img src="img/media/media2.png" alt="img2" class="media__img" />
+              <img src="img/media/media3.png" alt="img3" class="media__img" />
+            </div>
+            <div class="img-with-title">
+              <img src="img/media/media4.png" alt="img4" class="media__img" />
+            </div>
+          </div>
+          <img src="img/media/media5.png" alt="img5" class="media__img" />
+        </div>
+      </section>
+
+      <section class="tours" id="tours">
+        <div class="container tours-container">
+          <ul class="tours__list list">
+            <li class="tours__list--item">
+              <img
+                src="img/tours/tours1.png"
+                alt="tours-img"
+                class="tours__list--img"
+              />
+              <div class="tours__list--itemContainer">
+                <p class="tours__list--sity">Chandler, AZ</p>
+                <p class="tours__list--place">The Park at Wild Horse Pass</p>
+                <div style="display: flex; justify-content: space-between">
+                  <p class="tours__list--date">Apr 02 2021</p>
+                  <a
+                    href="https://www.bandsintown.com/a/124332-bright-lights"
+                    target="_blank"
+                    class="tours__list--buttonLink link"
+                    >Tickets</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="tours__list--item">
+              <img
+                src="img/tours/tours2.png"
+                alt="tours-img"
+                class="tours__list--img"
+              />
+              <div class="tours__list--itemContainer">
+                <p class="tours__list--sity">Ibiza, IBZ</p>
+                <p class="tours__list--place">Swag Ibiza Club</p>
+                <div style="display: flex; justify-content: space-between">
+                  <p class="tours__list--date">Jul 08 2021</p>
+                  <a
+                    href="https://www.bandsintown.com/a/124332-bright-lights"
+                    target="_blank"
+                    class="tours__list--buttonLink link"
+                    >Tickets</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li class="tours__list--item">
+              <img
+                src="img/tours/tours3.png"
+                alt="tours-img"
+                class="tours__list--img"
+              />
+              <div class="tours__list--itemContainer">
+                <p class="tours__list--sity">Ibiza, IBZ</p>
+                <p class="tours__list--place">El Swing Ibiza</p>
+                <div style="display: flex; justify-content: space-between">
+                  <p class="tours__list--date">Jul 10 2021</p>
+                  <a
+                    href="https://www.bandsintown.com/a/124332-bright-lights"
+                    target="_blank"
+                    class="tours__list--buttonLink link"
+                    >Tickets</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container contacts-container">
+          <img
+            src="img/logo.png"
+            alt="logo"
+            width="233"
+            height="60"
+            class="contacts__img"
+          />
+          <ul class="contacts__list list">
+            <li class="contacts__list--item">
+              <p class="contacts__list--text">Artist Management:</p>
+              <p class="contacts__list--data">Jake Henny</p>
+            </li>
+            <li class="contacts__list--item">
+              <p class="contacts__list--text">Email:</p>
+              <p class="contacts__list--data">jake@brightlightsofficial.com</p>
+            </li>
+          </ul>
+          <div class="contacts__socialLinksListContainer">
+            <ul class="contacts__socialLinksList list">
+              <li class="contacts__socialLinksList--item">
+                <a
+                  href="https://www.facebook.com/brightlights333"
+                  target="_blank"
+                  class="contacts__socialLinksList--link link"
+                >
+                  <div class="contacts__socialLinksList--span">
+                    <svg height="24" width="24">
+                      <use href="svg/sprite.svg#itunes-icon"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="contacts__socialLinksList--item">
+                <a
+                  href="https://www.facebook.com/brightlights333"
+                  target="_blank"
+                  class="contacts__socialLinksList--link link"
+                >
+                  <div class="contacts__socialLinksList--span">
+                    <svg height="24" width="24">
+                      <use href="svg/sprite.svg#spotify-icon"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="contacts__socialLinksList--item">
+                <a
+                  href="https://www.facebook.com/brightlights333"
+                  target="_blank"
+                  class="contacts__socialLinksList--link link"
+                >
+                  <div class="contacts__socialLinksList--span">
+                    <svg height="24" width="24">
+                      <use href="svg/sprite.svg#insta-icon"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul class="contacts__socialLinksList list">
+              <li class="contacts__socialLinksList--item">
+                <a
+                  href="https://www.facebook.com/brightlights333"
+                  target="_blank"
+                  class="contacts__socialLinksList--link link"
+                >
+                  <div class="contacts__socialLinksList--span">
+                    <svg height="24" width="24">
+                      <use href="svg/sprite.svg#youtube-icon"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="contacts__socialLinksList--item">
+                <a
+                  href="https://www.facebook.com/brightlights333"
+                  target="_blank"
+                  class="contacts__socialLinksList--link link"
+                >
+                  <div class="contacts__socialLinksList--span">
+                    <svg height="24" width="24">
+                      <use href="svg/sprite.svg#twitter-icon"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+              <li class="contacts__socialLinksList--item">
+                <a
+                  href="https://www.facebook.com/brightlights333"
+                  target="_blank"
+                  class="contacts__socialLinksList--link link"
+                >
+                  <div class="contacts__socialLinksList--span">
+                    <svg height="24" width="24">
+                      <use href="svg/sprite.svg#facebook-icon"></use>
+                    </svg>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SOCIAL LINKS LIST DESKTOP -->
+          <ul class="contacts__socialLinksListDesktop list">
+            <li class="contacts__socialLinksList--item">
+              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+                <div class="contacts__socialLinksList--span">
+                  <svg height="24" width="24">
+                    <use href="svg/sprite.svg#itunes-icon"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="contacts__socialLinksList--item">
+              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+                <div class="contacts__socialLinksList--span">
+                  <svg height="24" width="24">
+                    <use href="svg/sprite.svg#spotify-icon"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="contacts__socialLinksList--item">
+              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+                <div class="contacts__socialLinksList--span">
+                  <svg height="24" width="24">
+                    <use href="svg/sprite.svg#insta-icon"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="contacts__socialLinksList--item">
+              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+                <div class="contacts__socialLinksList--span">
+                  <svg height="24" width="24">
+                    <use href="svg/sprite.svg#youtube-icon"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="contacts__socialLinksList--item">
+              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+                <div class="contacts__socialLinksList--span">
+                  <svg height="24" width="24">
+                    <use href="svg/sprite.svg#twitter-icon"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+            <li class="contacts__socialLinksList--item">
+              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+                <div class="contacts__socialLinksList--span">
+                  <svg height="24" width="24">
+                    <use href="svg/sprite.svg#facebook-icon"></use>
+                  </svg>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <p class="footer__text">© 2020 DJ bright lights.</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/musicPlaylist.js"></script>
+  </body>
+</html>
