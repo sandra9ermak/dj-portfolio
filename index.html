@@ -16,31 +16,70 @@
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-container">
-        <img src="./img/logo.png" alt="logo" height="60" width="233" />
+        <img src="./img/logo.png" alt="logo" class="header-logo" />
+        <button type="button" class="header-container-button">
+          <svg class="header-burger-menu" height="35" width="35">
+            <use href="./img/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
         <nav class="neader__nav">
           <ul class="header__list list">
-            <li class="header__list--link">
+            <li class="header__list--item">
               <a href="#about" class="header__list--link link">About</a>
             </li>
-            <li class="header__list--link">
+            <li class="header__list--item">
               <a href="#news" class="header__list--link link">News</a>
             </li>
-            <li class="header__list--link">
+            <li class="header__list--item">
               <a href="#music" class="header__list--link link">Music</a>
             </li>
-            <li class="header__list--link">
+            <li class="header__list--item">
               <a href="#media" class="header__list--link link">Media</a>
             </li>
-            <li class="header__list--link">
+            <li class="header__list--item">
               <a href="#tours" class="header__list--link link">Tours</a>
             </li>
-            <li class="header__list--link">
+            <li class="header__list--item">
               <a href="#contacts" class="header__list--link link">Contacts</a>
             </li>
           </ul>
         </nav>
+      </div>
+
+      <div class="header__mobileMenu">
+        <div class="header__mobileMenu--container">
+          <button type="button" class="header__mobileMenu--button">
+            <svg class="header-burger-menu" height="35" width="35">
+              <use href="./img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobileMenu__nav">
+            <ul class="mobileMenu__list list">
+              <li class="mobileMenu__list--item">
+                <a href="#about" class="mobileMenu__list--link link">About</a>
+              </li>
+              <li class="mobileMenu__list--item">
+                <a href="#news" class="mobileMenu__list--link link">News</a>
+              </li>
+              <li class="mobileMenu__list--item">
+                <a href="#music" class="mobileMenu__list--link link">Music</a>
+              </li>
+              <li class="mobileMenu__list--item">
+                <a href="#media" class="mobileMenu__list--link link">Media</a>
+              </li>
+              <li class="mobileMenu__list--item">
+                <a href="#tours" class="mobileMenu__list--link link">Tours</a>
+              </li>
+              <li class="mobileMenu__list--item">
+                <a href="#contacts" class="mobileMenu__list--link link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -458,7 +497,11 @@
           <!-- SOCIAL LINKS LIST DESKTOP -->
           <ul class="contacts__socialLinksListDesktop list">
             <li class="contacts__socialLinksList--item">
-              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+              <a
+                href="https://www.facebook.com/brightlights333"
+                target="_blank"
+                class="contacts__socialLinksList--link link"
+              >
                 <div class="contacts__socialLinksList--span">
                   <svg height="24" width="24">
                     <use href="svg/sprite.svg#itunes-icon"></use>
@@ -467,7 +510,11 @@
               </a>
             </li>
             <li class="contacts__socialLinksList--item">
-              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+              <a
+                href="https://www.facebook.com/brightlights333"
+                target="_blank"
+                class="contacts__socialLinksList--link link"
+              >
                 <div class="contacts__socialLinksList--span">
                   <svg height="24" width="24">
                     <use href="svg/sprite.svg#spotify-icon"></use>
@@ -476,7 +523,11 @@
               </a>
             </li>
             <li class="contacts__socialLinksList--item">
-              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+              <a
+                href="https://www.facebook.com/brightlights333"
+                target="_blank"
+                class="contacts__socialLinksList--link link"
+              >
                 <div class="contacts__socialLinksList--span">
                   <svg height="24" width="24">
                     <use href="svg/sprite.svg#insta-icon"></use>
@@ -485,7 +536,11 @@
               </a>
             </li>
             <li class="contacts__socialLinksList--item">
-              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+              <a
+                href="https://www.facebook.com/brightlights333"
+                target="_blank"
+                class="contacts__socialLinksList--link link"
+              >
                 <div class="contacts__socialLinksList--span">
                   <svg height="24" width="24">
                     <use href="svg/sprite.svg#youtube-icon"></use>
@@ -494,7 +549,11 @@
               </a>
             </li>
             <li class="contacts__socialLinksList--item">
-              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+              <a
+                href="https://www.facebook.com/brightlights333"
+                target="_blank"
+                class="contacts__socialLinksList--link link"
+              >
                 <div class="contacts__socialLinksList--span">
                   <svg height="24" width="24">
                     <use href="svg/sprite.svg#twitter-icon"></use>
@@ -503,7 +562,11 @@
               </a>
             </li>
             <li class="contacts__socialLinksList--item">
-              <a href="https://www.facebook.com/brightlights333" target="_blank" class="contacts__socialLinksList--link link">
+              <a
+                href="https://www.facebook.com/brightlights333"
+                target="_blank"
+                class="contacts__socialLinksList--link link"
+              >
                 <div class="contacts__socialLinksList--span">
                   <svg height="24" width="24">
                     <use href="svg/sprite.svg#facebook-icon"></use>
@@ -519,9 +582,15 @@
         <div class="container">
           <p class="footer__text">© 2020 DJ bright lights.</p>
         </div>
+        <a href="#header" class="footer-arrow-button">
+          <svg class="footer-arrow-svg" height="60" width="60">
+            <use href="./img/sprite.svg#icon-up-arrow"></use>
+          </svg>
+        </a>
       </footer>
     </main>
 
     <script src="./js/musicPlaylist.js"></script>
+    <script src="./js/mobileMenu.js"></script>
   </body>
 </html>

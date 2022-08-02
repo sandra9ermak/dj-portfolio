@@ -75,13 +75,7 @@ html {
 
 .header {
   width: 100%;
-  display: none;
-}
-
-@media screen and (min-width: 1200px) {
-  .header {
-    display: flex;
-  }
+  display: flex;
 }
 
 .header-container {
@@ -92,15 +86,53 @@ html {
   align-items: center;
 }
 
+.header-container-button {
+  background-color: transparent;
+  border: none;
+}
+
+.header-logo {
+  height: 45px;
+  width: 170px;
+  padding-left: 20px;
+  padding-right: 80px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-logo {
+    height: 60px;
+    width: 233px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.header-burger-menu {
+  fill: rgba(255, 255, 255, 0.827);
+}
+
+@media screen and (min-width: 1200px) {
+  .header-burger-menu {
+    display: none;
+  }
+}
+
 .neader__nav {
-  margin-left: 65px;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .neader__nav {
+    margin-left: 65px;
+    display: flex;
+  }
 }
 
 .header__list {
   display: flex;
 }
 
-.header__list--link:not(:last-child) {
+.header__list--item:not(:last-child) {
   margin-right: 56px;
 }
 
@@ -108,11 +140,71 @@ html {
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   transition-duration: 500ms;
 }
 
 .header__list--link:hover, .header__list--link:focus {
+  transition-property: color;
+  transition-duration: 500ms;
+  color: #7a66cc;
+}
+
+/*  MOBILE MENU  */
+.header__mobileMenu {
+  position: fixed;
+  background-color: #1c1b21;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  padding: 48px 0;
+  z-index: 100;
+  overflow: auto;
+  transform: translateX(100%);
+  transition: transform 250ms linear;
+}
+
+.header__mobileMenu.is-open {
+  transform: translateX(0%);
+}
+
+@media screen and (min-width: 768px) {
+  .header__mobileMenu {
+    display: none;
+  }
+}
+
+.header__mobileMenu--container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.header__mobileMenu--button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.mobileMenu__nav {
+  display: block;
+}
+
+.mobileMenu__list--item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.mobileMenu__list--link {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 27px;
+  color: #ffffffef;
+  transition-duration: 500ms;
+}
+
+.mobileMenu__list--link:hover, .mobileMenu__list--link:focus {
   transition-property: color;
   transition-duration: 500ms;
   color: #7a66cc;
@@ -590,6 +682,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
     width: 434px;
     height: 434px;
     padding-top: 70px;
+    left: -0.5%;
   }
 }
 
@@ -869,6 +962,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
 
 @media screen and (min-width: 1200px) {
   .media {
+    display: flex;
     padding-top: 180px;
   }
 }
@@ -891,7 +985,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
 }
 
 .img-with-title::before {
-  content: 'EDC Las Vegas Mainstage';
+  content: "EDC Las Vegas Mainstage";
   position: absolute;
   top: 45%;
   left: 20%;
@@ -902,7 +996,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
   font-size: 24px;
   line-height: 36px;
   text-align: center;
-  color: #7A66CC;
+  color: #7a66cc;
 }
 
 .tours {
@@ -1153,5 +1247,30 @@ input[type="range" i]::-webkit-media-slider-thumb {
   text-align: center;
   text-transform: uppercase;
   opacity: 0.5;
+}
+
+.footer-arrow-button {
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-arrow-button {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+.footer-arrow-svg {
+  fill: #876def64;
+  transition-property: fill;
+  transition-duration: 500ms;
+}
+
+.footer-arrow-svg:hover, .footer-arrow-svg:focus {
+  fill: aliceblue;
 }
 /*# sourceMappingURL=main.css.map */
