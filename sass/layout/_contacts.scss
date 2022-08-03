@@ -8,6 +8,9 @@
 }
 
 .contacts-container {
+  @media screen and (min-width: 768px) {
+      width: 533px;
+    }
   @media screen and (min-width: 1200px) {
     width: 533px;
   }
@@ -31,7 +34,7 @@
   font-size: 15px;
   line-height: 27px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     font-size: 18px;
   }
@@ -41,7 +44,7 @@
   font-weight: 600;
   width: 199px;
   
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     text-align: right;
   }
 }
@@ -49,7 +52,7 @@
 .contacts__list--data {
   font-weight: 400;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-left: 30px;
   }
 }

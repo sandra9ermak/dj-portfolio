@@ -63,7 +63,7 @@ html {
 @media screen and (min-width: 768px) {
   .container {
     width: 100%;
-    max-width: 768px;
+    max-width: 730px;
   }
 }
 
@@ -111,7 +111,7 @@ html {
   fill: rgba(255, 255, 255, 0.827);
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .header-burger-menu {
     display: none;
   }
@@ -121,10 +121,15 @@ html {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .neader__nav {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .neader__nav {
     margin-left: 65px;
-    display: flex;
   }
 }
 
@@ -133,12 +138,18 @@ html {
 }
 
 .header__list--item:not(:last-child) {
-  margin-right: 56px;
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__list--item:not(:last-child) {
+    margin-right: 56px;
+  }
 }
 
 .header__list--link {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 27px;
   color: #ffffff;
   transition-duration: 500ms;
@@ -148,6 +159,12 @@ html {
   transition-property: color;
   transition-duration: 500ms;
   color: #7a66cc;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__list--link {
+    font-size: 18px;
+  }
 }
 
 /*  MOBILE MENU  */
@@ -253,7 +270,7 @@ html {
   display: block;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .about__description {
     display: flex;
   }
@@ -269,6 +286,12 @@ html {
   margin-bottom: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__descriptionText {
+    margin-right: 50px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .about__descriptionText {
     margin-right: 125px;
@@ -279,6 +302,13 @@ html {
   width: 320px;
   height: 300px;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__img {
+    width: 400px;
+    height: 400px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -328,6 +358,12 @@ html {
   padding: 50px 20px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__descriptionOfMusic {
+    margin-top: 150px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .about__descriptionOfMusic {
     padding: 50px 0 50px 80px;
@@ -335,11 +371,23 @@ html {
   }
 }
 
+.about__descriptionOfMusic::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/about/aboutMusic-img.png");
+}
+
+@media screen and (min-width: 768px) {
+  .about__descriptionOfMusic::before {
+    width: 270px;
+    height: 380px;
+    top: -25%;
+    left: 60%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .about__descriptionOfMusic::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/about/aboutMusic-img.png");
     width: 370px;
     height: 480px;
     top: -50%;
@@ -349,6 +397,12 @@ html {
 
 .about__descriptionOfMusic--text {
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .about__descriptionOfMusic--text {
+    width: 400px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -432,6 +486,12 @@ html {
 .main-audio {
   width: 280px;
   height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-audio {
+    width: 730px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -539,9 +599,16 @@ input[type="range" i]::-webkit-media-slider-thumb {
   flex-wrap: wrap;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .news__list {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .news__list {
     margin-right: -30px;
   }
 }
@@ -612,7 +679,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
   display: block;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .music-container {
     display: flex;
   }
@@ -660,6 +727,12 @@ input[type="range" i]::-webkit-media-slider-thumb {
   height: 260px;
 }
 
+@media screen and (min-width: 768px) {
+  .music__img--secondContainer::before {
+    left: 6.5%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .music__img--secondContainer::before {
     width: 472.22px;
@@ -677,12 +750,25 @@ input[type="range" i]::-webkit-media-slider-thumb {
   left: 12%;
 }
 
+@media screen and (min-width: 768px) {
+  .music__img {
+    left: 15.5%;
+    padding-top: 17%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .music__img {
     width: 434px;
     height: 434px;
     padding-top: 70px;
     left: -0.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .music__listContainer {
+    margin-left: 100px;
   }
 }
 
@@ -696,7 +782,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .music__titleContainer {
     display: flex;
     align-items: center;
@@ -714,7 +800,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
   align-items: center;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .music__titleContainerMobile {
     display: none;
   }
@@ -738,6 +824,18 @@ input[type="range" i]::-webkit-media-slider-thumb {
   counter-reset: num;
   list-style: none;
   margin-top: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .music__list {
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .music__list {
+    width: 550px;
+  }
 }
 
 .music__list li {
@@ -847,6 +945,12 @@ input[type="range" i]::-webkit-media-slider-thumb {
 .music__audio {
   width: 280px;
   height: 27px;
+}
+
+@media screen and (min-width: 768px) {
+  .music__audio {
+    width: 345px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1013,9 +1117,10 @@ input[type="range" i]::-webkit-media-slider-thumb {
   display: block;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .tours__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
@@ -1116,6 +1221,12 @@ input[type="range" i]::-webkit-media-slider-thumb {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-container {
+    width: 533px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts-container {
     width: 533px;
@@ -1143,7 +1254,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
   line-height: 27px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contacts__list--item {
     display: flex;
     font-size: 18px;
@@ -1155,7 +1266,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
   width: 199px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contacts__list--text {
     text-align: right;
   }
@@ -1165,7 +1276,7 @@ input[type="range" i]::-webkit-media-slider-thumb {
   font-weight: 400;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .contacts__list--data {
     margin-left: 30px;
   }

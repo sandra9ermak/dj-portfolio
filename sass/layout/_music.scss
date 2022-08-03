@@ -9,7 +9,7 @@
 .music-container {
   display: block;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
@@ -52,6 +52,9 @@
     width: 260px;
     height: 260px;
 
+    @media screen and (min-width: 768px) {
+      left: 6.5%;
+    }
     @media screen and (min-width: 1200px) {
       width: 472.22px;
       height: 472.22px;
@@ -68,6 +71,10 @@
   padding-top: 14%;
   left: 12%;
 
+  @media screen and (min-width: 768px) {
+    left: 15.5%;
+    padding-top: 17%;
+  }
   @media screen and (min-width: 1200px) {
     width: 434px;
     height: 434px;
@@ -77,6 +84,9 @@
 }
 
 .music__listContainer {
+  @media screen and (min-width: 768px) {
+    margin-left: 100px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 60px;
   }
@@ -85,7 +95,7 @@
 .music__titleContainer {
   display: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
     margin-bottom: 60px;
@@ -101,7 +111,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -122,6 +132,13 @@
   counter-reset: num;
   list-style: none;
   margin-top: 50px;
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 550px;
+  }
 }
 
 .music__list li {
@@ -234,6 +251,9 @@
   width: 280px;
   height: 27px;
 
+  @media screen and (min-width: 768px) {
+      width: 345px;
+    }
   @media screen and (min-width: 1200px) {
     width: 540px;
   }
